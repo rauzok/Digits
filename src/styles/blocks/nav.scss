@@ -1,0 +1,29 @@
+.nav {
+  -webkit-user-select: none;
+
+  &__items {
+    display: grid;
+    grid-template-columns: repeat(6, max-content);
+    column-gap: 40px;
+
+    font-family: "Gill Sans", sans-serif;
+    font-size: 17px;
+    font-weight: 200;
+    text-transform: uppercase;
+    text-decoration: none;
+  }
+
+  &__link {
+    color: #c2c2c2;
+  }
+
+  &__list {
+    padding: 10px;
+
+    transition: 0.3s linear;
+
+    &:hover {
+      color: #0b6282;
+    }
+  }
+}
