@@ -4,3 +4,60 @@
     #{$_property}: $_toValue;
   }
 }
+
+@mixin nav-text {
+  font-family: "Gill Sans", sans-serif;
+  font-size: 17px;
+  font-weight: 200;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+@mixin about-us-title {
+  font-family: "Gill Sans", sans-serif;
+  font-size: 50px;
+  font-weight: 400;
+
+  text-align: center;
+  text-transform: uppercase;
+
+  color: #e5e5e5;
+}
+
+@mixin about-us-p {
+  font-family: "Gill Sans", sans-serif;
+  font-size: 27px;
+  line-height: 36px;
+  font-weight: 300;
+}
+
+@mixin shadow-block {
+  -webkit-box-shadow: 0 0 10px 2px rgba(0, 0, 0, 0.9);
+}
+
+@mixin offers-title {
+  font-family: "Gill Sans", sans-serif;
+  font-size: 50px;
+  font-weight: 400;
+
+  text-align: center;
+  text-transform: uppercase;
+
+  color: #e5e5e5;
+}
+
+@mixin offers-p {
+  font-family: "Gill Sans", sans-serif;
+  font-size: 24px;
+  font-weight: 200;
+
+  text-align: center;
+
+  color: #e5e5e5;
+}
+
+@mixin strip {
+  width: 163px;
+  height: 2px;
+  background-color: #064d66;
+}
