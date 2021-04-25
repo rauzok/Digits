@@ -1,4 +1,7 @@
 .about-us {
+  z-index: 1;
+  position: relative;
+
   height: 813px;
   width: 100%;
 
@@ -7,27 +10,29 @@
   justify-content: center;
   align-items: center;
 
+  background-size: cover;
   background-image: url("../images/block1.jpg");
   background-repeat: no-repeat;
+  @include shadow-block;
+
+  &__strip {
+    margin-bottom: 67px;
+
+    @include strip;
+  }
 
   &__title {
     margin-bottom: 47px;
 
-    font-family: "Minion Pro", sans-serif;
-    font-size: 50px;
-    font-weight: 500;
-    text-align: center;
-    color: #e5e5e5;
+    @include about-us-title;
   }
 
   &__p {
-    width: 70vw;
+    width: 950px;
     margin-bottom: 55px;
 
-    font-family: "Gill Sans", sans-serif;
-    font-size: 28px;
-    line-height: 36px;
-    font-weight: 200;
+    @include about-us-p;
+  
     text-align: center;
     color: #e5e5e5;
   }
@@ -46,7 +51,7 @@
     line-height: 75px;
     color: #e5e5e5;
 
-    border: solid 1px #064d66;
+    border: solid 2px #064d66;
 
     transition: background-color 0.3s linear;
 
