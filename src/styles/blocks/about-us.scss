@@ -87,3 +87,20 @@
     }
   }
 }
+
+@media (max-width: 450px) {
+  .about-us {
+
+    &__title {
+      margin-bottom: 47px;
+
+      font-size: 35px;
+    }
+
+    &__p {
+      width: 320px;
+
+      font-size: 22px;
+    }
+  }
+}
