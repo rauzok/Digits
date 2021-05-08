@@ -60,3 +60,30 @@
     }
   }
 }
+
+@media (max-width: 1250px) {
+  .about-us {
+
+    &__p {
+      width: 750px;
+    }
+  }
+}
+
+@media (max-width: 800px) {
+  .about-us {
+
+    &__p {
+      width: 550px;
+    }
+  }
+}
+
+@media (max-width: 600px) {
+  .about-us {
+
+    &__p {
+      width: 400px;
+    }
+  }
+}

@@ -56,3 +56,21 @@
     filter: brightness(0.7);
   }
 }
+
+@media (max-width: 1250px) {
+  .header {
+
+    &__container {
+      padding: 0 100px;
+    }
+  }
+}
+
+@media (max-width: 1000px) {
+  .header {
+
+    &__container {
+      padding: 0 80px;
+    }
+  }
+}
