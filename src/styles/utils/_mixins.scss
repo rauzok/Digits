@@ -61,3 +61,15 @@
   height: 2px;
   background-color: #064d66;
 }
+
+@mixin strip-services {
+  width: 163px;
+  height: 2px;
+  background-color: #064d66;
+}
+
+@mixin strip2-services {
+  width: 176px;
+  height: 2px;
+  background-color: #064d66;
+}
