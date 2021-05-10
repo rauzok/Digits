@@ -1,1 +1,102 @@
-//
+.services {
+
+  &__title-block {
+    margin-bottom: 135px;
+    height: 352px;
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
+
+    background-size: cover;
+    background-image: url("../images/block1.jpg");
+    background-repeat: no-repeat;
+    @include shadow-block;
+  }
+
+  &__title {
+    margin: 0 35px;
+    @include offers-title;
+    align-self: center;
+  }
+
+  &__rectangle0 {
+    opacity: 0;
+    @include strip-services;
+
+    align-self: center;
+  }
+
+  &__rectangle01 {
+    margin-left: -88px;
+    margin-top: 86px;
+    @include strip2-services;
+
+    align-self: center;
+
+    transform: rotate(90deg);
+  }
+
+  &__rectangle1 {
+    @include strip-services;
+
+    align-self: center;
+  }
+
+  &__rectangle2 {
+    margin-left: 76px;
+    margin-top: 86px;
+    @include strip2-services;
+
+    align-self: center;
+
+    transform: rotate(90deg);
+  }
+}
+
+.proffer {
+  height: 91vh;
+
+  display: flex;
+  justify-content: center;
+
+  &__left {
+    width: 50vw;
+
+    background-size: cover;
+    background-image: url("../images/services/Left.jpg");
+    background-repeat: no-repeat;
+
+    filter: brightness(0.4);
+
+    transition: filter 0.3s linear;
+
+    &:hover {
+      filter: brightness(1);
+
+      border: solid 5px #064d66;
+
+      transition: border 0.2s linear;
+    }
+  }
+
+  &__rigth {
+    width: 50vw;
+
+    background-size: cover;
+    background-image: url("../images/services/Rigth.jpg");
+    background-repeat: no-repeat;
+
+    filter: brightness(0.3);
+
+    transition: filter 0.3s linear;
+
+    &:hover {
+      filter: brightness(1);
+
+      border: solid 5px #064d66;
+
+      transition: border 0.2s linear;
+    }
+  }
+}
