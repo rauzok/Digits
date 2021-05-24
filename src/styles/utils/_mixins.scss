@@ -21,7 +21,7 @@
   text-align: center;
   text-transform: uppercase;
 
-  color: #e5e5e5;
+  color: $text-color;
 }
 
 @mixin about-us-p {
@@ -43,7 +43,7 @@
   text-align: center;
   text-transform: uppercase;
 
-  color: #e5e5e5;
+  color: $text-color;
 }
 
 @mixin offers-p {
@@ -53,23 +53,44 @@
 
   text-align: center;
 
-  color: #e5e5e5;
+  color: $text-color;
+}
+
+@mixin services-p {
+  font-family: "Gill Sans", sans-serif;
+  font-size: 24px;
+  font-weight: 200;
+
+  text-align: left;
+
+  color: $text-color;
 }
 
 @mixin strip {
   width: 163px;
   height: 2px;
-  background-color: #064d66;
+  background-color: $brand-color;
 }
 
 @mixin strip-services {
   width: 163px;
   height: 2px;
-  background-color: #064d66;
+  background-color: $brand-color;
 }
 
 @mixin strip2-services {
   width: 176px;
   height: 2px;
-  background-color: #064d66;
+  background-color: $brand-color;
+}
+
+@mixin services-title {
+  font-family: "Gill Sans", sans-serif;
+  font-size: 40px;
+  font-weight: 200;
+
+  text-align: center;
+  text-transform: uppercase;
+
+  color: $text-color;
 }

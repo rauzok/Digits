@@ -55,7 +55,7 @@
 }
 
 .proffer {
-  height: 91vh;
+  height: 806px;
 
   display: flex;
   justify-content: center;
@@ -63,40 +63,154 @@
   &__left {
     width: 50vw;
 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
     background-size: cover;
     background-image: url("../images/services/Left.jpg");
     background-repeat: no-repeat;
 
-    filter: brightness(0.4);
+    filter: brightness(0.6);
 
-    transition: filter 0.3s linear;
+    transition: 0.3s linear;
 
     &:hover {
       filter: brightness(1);
 
-      border: solid 5px #064d66;
-
-      transition: border 0.2s linear;
+      border: solid 10px $brand-color;
     }
   }
 
   &__rigth {
     width: 50vw;
 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
     background-size: cover;
     background-image: url("../images/services/Rigth.jpg");
     background-repeat: no-repeat;
 
-    filter: brightness(0.3);
+    filter: brightness(0.4);
 
-    transition: filter 0.3s linear;
+    transition: 0.3s linear;
 
     &:hover {
       filter: brightness(1);
 
-      border: solid 5px #064d66;
+      border: solid 10px $brand-color;
+    }
+  }
 
-      transition: border 0.2s linear;
+  &__title {
+    width: 300px;
+    margin-bottom: 30px;
+
+    align-self: center;
+
+    @include services-title;
+  }
+
+  &__title1 {
+    width: 300px;
+    margin-top: 15px;
+    margin-bottom: 60px;
+
+    align-self: center;
+
+    @include services-title;
+  }
+
+  &__icon-block {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin-bottom: 30px;
+  }
+
+  &__icon-rectangle {
+    @include strip-services;
+  }
+
+  &__icon {
+    width: 120px;
+    height: 60px;
+
+    background-size: cover;
+    background-image: url("../images/services/icon1.png");
+    background-repeat: no-repeat;
+
+    transform: scale(0.5);
+  }
+
+  &__block-text {
+    display: grid;
+    row-gap: 12px;
+
+    margin-bottom: 70px;
+  }
+
+  &__block-text1 {
+    display: grid;
+    row-gap: 12px;
+
+    margin-bottom: 180px;
+  }
+
+  &__block-icon {
+    display: flex;
+    justify-content: center;
+
+    margin: auto;
+  }
+
+  &__block-icon-text {
+    width: 56px;
+    height: 48px;
+
+    margin-right: 10px;
+
+    align-self: center;
+
+    background-size: cover;
+    background-image: url("../images/services/icon2.png");
+    background-repeat: no-repeat;
+  }
+
+  &__block-p {
+    width: 340px;
+
+    @include services-p;
+  }
+
+  &__button {
+    width: 300px;
+    height: 50px;
+
+    font-family: "Gill Sans", sans-serif;
+    font-size: 26px;
+    font-weight: 200;
+
+    text-align: center;
+    line-height: 50px;
+    color: $text-color;
+    text-transform: uppercase;
+
+    background-color: $brand-color;
+
+    align-self: center;
+
+    @include shadow-block;
+
+    transition: 0.3s linear;
+
+    &:hover {
+      color: $brand-color;
+
+      background-color: $text-color;
     }
   }
 }
