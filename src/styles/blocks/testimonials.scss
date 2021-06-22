@@ -1,0 +1,30 @@
+.testimonials {
+  height: 813px;
+
+  background-size: cover;
+  background-image: url("../images/block1.jpg");
+  background-repeat: no-repeat;
+  @include shadow-block;
+}
+
+.title-block {
+  padding-top: 85px;
+  margin-bottom: 135px;
+  width: 100%;
+
+  display: flex;
+  justify-content: center;
+
+  &__title {
+    margin: 0 35px;
+    @include offers-title;
+    align-self: center;
+  }
+  
+  &__rectangle1 {
+    @include strip2-services;
+  
+    align-self: center;
+
+  }
+}
