@@ -52,6 +52,40 @@
 
     transform: rotate(90deg);
   }
+
+  &__rectangle3 {
+    opacity: 1;
+    @include strip-services;
+
+    align-self: center;
+  }
+
+  &__rectangle04 {
+    margin-left: -88px;
+    margin-top: 86px;
+    @include strip2-services;
+
+    align-self: center;
+
+    transform: rotate(90deg);
+  }
+
+  &__rectangle5 {
+    opacity: 0;
+    @include strip-services;
+
+    align-self: center;
+  }
+
+  &__rectangle6 {
+    margin-left: -88px;
+    margin-top: 86px;
+    @include strip2-services;
+
+    align-self: center;
+
+    transform: rotate(90deg);
+  }
 }
 
 .proffer {
@@ -59,6 +93,11 @@
 
   display: flex;
   justify-content: center;
+
+  margin-top: 135px;
+  margin-bottom: 100px;
+
+  @include shadow-block;
 
   &__left {
     width: 50vw;
@@ -71,14 +110,14 @@
     background-image: url("../images/services/Left.jpg");
     background-repeat: no-repeat;
 
-    filter: brightness(0.6);
+    border: solid 5px $body-bg-color;
 
-    transition: 0.3s linear;
+    transition: linear 0.5s;
 
     &:hover {
-      filter: brightness(1);
+      background-image: url("../images/services/Left-hover.jpg");
 
-      border: solid 10px $brand-color;
+      border: solid 5px $brand-color;
     }
   }
 
@@ -93,14 +132,15 @@
     background-image: url("../images/services/Rigth.jpg");
     background-repeat: no-repeat;
 
-    filter: brightness(0.4);
+    border: solid 5px $body-bg-color;
 
-    transition: 0.3s linear;
+    filter: brightness(1);
+    transition: linear 0.5s;
 
     &:hover {
-      filter: brightness(1);
+      background-image: url("../images/services/Rigth-hover.jpg");
 
-      border: solid 10px $brand-color;
+      border: solid 5px $brand-color;
     }
   }
 
@@ -133,6 +173,7 @@
 
   &__icon-rectangle {
     @include strip-services;
+
   }
 
   &__icon {

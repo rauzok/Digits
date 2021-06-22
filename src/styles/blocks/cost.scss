@@ -1,0 +1,110 @@
+.cost {
+  margin-bottom: 190px;
+
+  &__request {
+    height: max-content;
+
+    margin: 0 10vw;
+
+    background-size: cover;
+    background-image: url("../images/block1.jpg");
+    background-repeat: no-repeat;
+    @include shadow-block;
+
+    border: solid 5px $brand-color;
+
+    &-title {
+      padding: 50px 50px 0;
+      margin-bottom: 30px;
+
+      @include about-us-title;
+      font-size: 38px;
+    }
+
+    &-text {
+      padding: 0 50px;
+      margin-bottom: 40px;
+
+      @include about-us-p;
+      font-size: 24px;
+      line-height: normal;
+  
+      text-align: center;
+      color: #e5e5e5;
+    }
+  }
+
+  &-id {
+    padding: 43px;
+  }
+}
+
+.form {
+  width: 50vw;
+
+  display: flex;
+  flex-direction: column;
+
+  margin: auto;
+
+  &__name {
+    height: $input-heigth;
+    padding-left: 15px;
+    margin-bottom: 30px;
+  }
+
+  &__mail {
+    height: $input-heigth;
+    padding-left: 15px;
+    margin-bottom: 30px;
+  }
+
+  &__textarea {
+    outline: none;
+    -moz-appearance: none;
+    resize: none;
+    overflow: auto;
+    margin-bottom: 50px;
+  }
+
+  &__button {
+    width: 300px;
+    height: 50px;
+    margin-bottom: 50px;
+
+    font-family: "Gill Sans", sans-serif;
+    font-size: 26px;
+    font-weight: 200;
+
+    text-align: center;
+    line-height: 50px;
+    color: $text-color;
+    text-transform: uppercase;
+
+    background-color: $brand-color;
+    border: none;
+
+    align-self: center;
+
+    @include shadow-block;
+
+    transition: 0.3s linear;
+
+    &:hover {
+      color: $brand-color;
+
+      background-color: $text-color;
+    }
+  }
+}
+
+.tree {
+  height: 48vw;
+  width: 58vw;
+
+  background-size: cover;
+  background-image: url("../images/tree.png");
+  background-repeat: no-repeat;
+
+  margin: auto;
+}
